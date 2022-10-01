@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do List with Jquery</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+      <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TODO LIST</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container mt-5">
+        <h1>Cadastro de Atividades</h1>
+        <div
+          class="alert alert-success alert-dismissible fade show hide-message"
+          role="alert">
+          Cadastro realizado com sucesso
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"></button>
+        </div>
+        <div
+          class="alert alert-danger alert-dismissible fade show hide-message"
+          role="alert">
+          Preencha os campos 
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"></button>
+        </div>
+        <form class="mt-5" id="form-task">
+          <div class="mb-3">
+            <label for="taskInput" class="form-label">Task</label>
+            <input
+              placeholder="Digite o nome da tarefa"
+              type="text"
+              class="form-control"
+              id="taskInput"
+              aria-describedby="emailHelp" />
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input
+              placeholder="digite a data da tarefa"
+              type="text"
+              class="form-control"
+              id="date" />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/taskRegistration.js"></script>
+  </body>
+</html>
